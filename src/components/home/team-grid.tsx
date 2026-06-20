@@ -23,33 +23,30 @@ export function TeamGrid() {
   const [founder, ...contributors] = teamMembers;
 
   return (
-    <section className="space-y-10 sm:space-y-14">
-      <div className="text-center">
+    <div className="space-y-16 sm:space-y-20">
+      <section className="text-center">
         <p className="mb-3 font-body text-sm font-semibold uppercase tracking-wider text-teal">
-          {teamSection.eyebrow}
+          Founder
         </p>
         <h2 className="font-display text-3xl font-bold tracking-[-0.04em] text-navy sm:text-4xl lg:text-5xl">
-          {teamSection.title}
+          Meet the brains behind
         </h2>
-      </div>
-
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-start lg:gap-12">
-        <div className="flex justify-center lg:justify-start">
-          <div className="w-full max-w-[280px] sm:max-w-[300px]">
+        <div className="mt-10 flex justify-center">
+          <div className="w-full max-w-[280px] sm:max-w-[320px]">
             <div className="overflow-hidden rounded-[20px]">
               <Image
                 src={founder.image}
                 alt={founder.name}
                 width={480}
                 height={640}
-                sizes="(max-width: 1024px) 300px, 30vw"
+                sizes="(max-width: 640px) 280px, 320px"
                 className="aspect-[3/4] w-full object-cover"
               />
             </div>
-            <div className="mt-5 text-center lg:text-left">
+            <div className="mt-5">
               <h3 className="font-display text-2xl font-bold text-navy">{founder.name}</h3>
               <p className="mt-1 text-base text-muted">{founder.role}</p>
-              <div className="mt-4 flex items-center justify-center gap-3 lg:justify-start">
+              <div className="mt-4 flex items-center justify-center gap-3">
                 {founder.linkedin && (
                   <a
                     href={founder.linkedin}
@@ -76,10 +73,20 @@ export function TeamGrid() {
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:gap-5">
+      <section>
+        <div className="mb-10 text-center">
+          <p className="mb-3 font-body text-sm font-semibold uppercase tracking-wider text-teal">
+            {teamSection.eyebrow}
+          </p>
+          <h2 className="font-display text-3xl font-bold tracking-[-0.04em] text-navy sm:text-4xl lg:text-5xl">
+            {teamSection.title}
+          </h2>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
           {contributors.map((member) => (
-            <div key={member.name} className="text-center sm:text-left">
+            <div key={member.name} className="text-center">
               <div className="overflow-hidden rounded-[20px]">
                 <Image
                   src={member.image}
@@ -97,7 +104,7 @@ export function TeamGrid() {
             </div>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
