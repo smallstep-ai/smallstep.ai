@@ -6,6 +6,8 @@ const withMDX = createMDX({
 });
 
 const nextConfig: NextConfig = {
+  output: "export",
+  distDir: "dist",
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   images: {
     unoptimized: true,
