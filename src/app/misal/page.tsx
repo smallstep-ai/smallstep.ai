@@ -8,10 +8,14 @@ import { MisalTrySection } from "@/components/misal/misal-try-section";
 
 export default function MisalPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#E17029] via-[#FEAB55] via-[#FCF0C1] to-white">
-      <SiteHeader />
+    <main className="min-h-screen bg-white">
+      <div className="bg-gradient-to-b from-[#E17029] via-[#FEAB55] via-[#FCF0C1] to-white pb-16 sm:pb-20">
+        <SiteHeader />
+        <Container className="pt-16 sm:pt-20">
+          <MisalHero />
+        </Container>
+      </div>
       <Container className="space-y-16 py-16 sm:py-20">
-        <MisalHero />
         <MisalTrySection />
         <MisalStatsGrid />
         <MisalLinksGrid />
