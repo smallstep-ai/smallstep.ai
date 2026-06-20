@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SiteLogo } from "@/components/site-logo";
@@ -10,14 +10,6 @@ import { cn } from "@/lib/utils";
 export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const navLinkClass = (item: (typeof siteConfig.nav)[number], isActive: boolean) => {
     const color =
@@ -35,14 +27,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 px-4 pt-5">
       <div className="mx-auto w-full max-w-4xl">
-        <div
-          className={cn(
-            "flex items-center justify-between rounded-[var(--radius-pill)] px-4 py-3 backdrop-blur-md transition-[background-color,box-shadow,border-color] duration-300 md:px-5",
-            scrolled
-              ? "border-hairline/80 bg-white/95 shadow-[var(--shadow-card)]"
-              : "border-white/60 bg-white/90 shadow-[var(--shadow-nav)]"
-          )}
-        >
+        <div className="flex items-center justify-between rounded-[var(--radius-pill)] border border-white/60 bg-white/90 px-4 py-3 shadow-[var(--shadow-nav)] backdrop-blur-md md:px-5">
           <SiteLogo />
           <nav className="hidden items-center gap-6 md:flex">
             {siteConfig.nav.map((item) => {

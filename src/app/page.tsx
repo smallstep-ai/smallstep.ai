@@ -6,7 +6,6 @@ import { SiteHeader } from "@/components/site-header";
 import { HomeHero } from "@/components/home/home-hero";
 import { MisalSpotlight } from "@/components/home/misal-spotlight";
 import { TeamGrid } from "@/components/home/team-grid";
-import { BlogPromo } from "@/components/home/blog-promo";
 
 export default function HomePage() {
   return (
@@ -16,7 +15,6 @@ export default function HomePage() {
         <HomeHero />
         <MisalSpotlight />
         <TeamGrid />
-        <BlogPromo />
       </Container>
       <SiteFooter />
     </main>
