@@ -1,5 +1,3 @@
-/* Hallmark · macrostructure: Stat-Led · tone: serious/professional · anchor hue: warm orange */
-
 import { Container } from "@/components/container";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -10,14 +8,14 @@ import { MisalTrySection } from "@/components/misal/misal-try-section";
 
 export default function MisalPage() {
   return (
-    <main className="min-h-screen overflow-x-clip bg-white">
-      <div className="bg-gradient-to-b from-orange/5 to-white pb-16 sm:pb-20">
-        <SiteHeader />
-        <Container className="pt-16 sm:pt-24">
+    <main className="min-h-screen bg-white">
+      <SiteHeader />
+      <div className="bg-gradient-to-b from-[#E17029] via-[#FEAB55] via-[#FCF0C1] to-white pb-16 sm:pb-20">
+        <Container className="pt-24 sm:pt-28">
           <MisalHero />
         </Container>
       </div>
-      <Container className="space-y-20 py-20 sm:space-y-24 sm:py-24">
+      <Container className="space-y-16 py-16 sm:py-20">
         <MisalTrySection />
         <MisalStatsGrid />
         <MisalLinksGrid />
