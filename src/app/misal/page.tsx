@@ -1,41 +1,18 @@
-import Image from "next/image";
 import { Container } from "@/components/container";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { MisalHero } from "@/components/misal/misal-hero";
 import { MisalLinksGrid } from "@/components/misal/misal-links-grid";
 import { MisalStatsGrid } from "@/components/misal/misal-stats-grid";
-import { misalIntro } from "@/lib/misal-data";
+import { MisalTrySection } from "@/components/misal/misal-try-section";
 
 export default function MisalPage() {
   return (
-    <main className="bg-[radial-gradient(circle_at_top,_#fff1e5,_#ffffff_45%)]">
+    <main className="min-h-screen bg-gradient-to-b from-[#FF7A1A] via-[#FFF0D9] to-white">
       <SiteHeader />
       <Container className="space-y-16 py-16 sm:py-20">
         <MisalHero />
-        <section className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
-          <div className="space-y-5">
-            <h2 className="font-display text-4xl font-bold tracking-[-0.04em] text-navy sm:text-5xl">{misalIntro.title}</h2>
-            <ul className="space-y-4 text-lg leading-8 text-muted">
-              {misalIntro.bullets.map((bullet) => (
-                <li key={bullet} className="flex gap-3">
-                  <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-orange" />
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="overflow-hidden rounded-2xl">
-            <Image
-              src="/images/misal/7PuDqtkAui8aKVAttqppGTzNw.jpeg"
-              alt="Misal model preview"
-              width={1474}
-              height={640}
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="h-auto w-full"
-            />
-          </div>
-        </section>
+        <MisalTrySection />
         <MisalStatsGrid />
         <MisalLinksGrid />
       </Container>
