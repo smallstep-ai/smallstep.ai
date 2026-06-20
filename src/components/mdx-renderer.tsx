@@ -42,6 +42,15 @@ const mdxComponents = {
   pre: ({ className, ...props }: ComponentPropsWithoutRef<"pre">) => (
     <pre className={cn("overflow-x-auto rounded-2xl bg-ink p-5 text-sm text-white", className)} {...props} />
   ),
+  img: ({ src, alt, className, ...props }: ComponentPropsWithoutRef<"img">) => {
+    if (!src) return null;
+    return (
+      <figure className={cn("my-8", className)}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={src} alt={alt ?? ""} className="h-auto w-full rounded-2xl" loading="lazy" {...props} />
+      </figure>
+    );
+  },
 };
 
 export function MDXRenderer({ source }: { source: string }) {

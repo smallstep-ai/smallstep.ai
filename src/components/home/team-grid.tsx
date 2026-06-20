@@ -28,7 +28,7 @@ export function TeamGrid() {
       <div className="grid gap-8 lg:grid-cols-2">
         <div className="grid gap-5 rounded-2xl bg-white/60 p-5 sm:grid-cols-[0.9fr_1.1fr] sm:items-center sm:p-6">
           <div className="overflow-hidden rounded-2xl">
-            <Image src={founder.image} alt={founder.name} width={1257} height={1176} className="h-full w-full object-cover" />
+            <Image src={founder.image} alt={founder.name} width={1587} height={2245} className="h-full w-full object-cover" />
           </div>
           <div className="space-y-2">
             <p className="font-body text-lg font-semibold text-orange">Founder</p>
@@ -41,7 +41,13 @@ export function TeamGrid() {
           {contributors.map((member) => (
             <div key={member.name} className="space-y-3">
               <div className="overflow-hidden rounded-2xl">
-                <Image src={member.image} alt={member.name} width={320} height={346} className="aspect-square w-full object-cover" />
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={640}
+                  height={640}
+                  className="aspect-square w-full object-cover"
+                />
               </div>
               <div className="space-y-0.5">
                 <h3 className="font-display text-xl font-bold text-navy">{member.name}</h3>

@@ -29,8 +29,8 @@ export default function MisalPage() {
             <Image
               src="/images/misal/7PuDqtkAui8aKVAttqppGTzNw.jpeg"
               alt="Misal model preview"
-              width={1600}
-              height={900}
+              width={3840}
+              height={2160}
               className="h-auto w-full"
             />
           </div>
