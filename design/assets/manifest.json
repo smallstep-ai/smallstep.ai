@@ -96,6 +96,62 @@
         "bytes": 27653,
         "contentType": "image/jpeg"
       }
+    ],
+    "home": [
+      {
+        "url": "https://framerusercontent.com/images/QvHe4KQKeF4SdlMfkZm4ZCghTk.png",
+        "file": "public/images/home/QvHe4KQKeF4SdlMfkZm4ZCghTk.png",
+        "bytes": 12196,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/cm62IqDlxSYtaLaLmTfJGnJz0C4.png",
+        "file": "public/images/home/cm62IqDlxSYtaLaLmTfJGnJz0C4.png",
+        "bytes": 30974,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/oP2yQYkBKtcqHMd3f5YjScXycKE.png",
+        "file": "public/images/home/oP2yQYkBKtcqHMd3f5YjScXycKE.png",
+        "bytes": 432298,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/UlG7lLA2mjPOj4AvUx8wFtZc24.jpeg",
+        "file": "public/images/home/UlG7lLA2mjPOj4AvUx8wFtZc24.jpeg",
+        "bytes": 96195,
+        "contentType": "image/jpeg"
+      },
+      {
+        "url": "https://framerusercontent.com/images/VyecrwKMqQCd5h4CE2nDPINgJbM.jpg",
+        "file": "public/images/home/VyecrwKMqQCd5h4CE2nDPINgJbM.jpg",
+        "bytes": 261202,
+        "contentType": "image/jpeg"
+      },
+      {
+        "url": "https://framerusercontent.com/images/t0CRvusbvD9Ne02lvEgEp9AzTs.jpg",
+        "file": "public/images/home/t0CRvusbvD9Ne02lvEgEp9AzTs.jpg",
+        "bytes": 2784997,
+        "contentType": "image/jpeg"
+      },
+      {
+        "url": "https://framerusercontent.com/images/ISaGvV5ll1j9ZOxH80K8nKiUQ.jpg",
+        "file": "public/images/home/ISaGvV5ll1j9ZOxH80K8nKiUQ.jpg",
+        "bytes": 1736594,
+        "contentType": "image/jpeg"
+      },
+      {
+        "url": "https://framerusercontent.com/images/gBHLHzPoYHd6qKq64EPMu0VGjFE.png",
+        "file": "public/images/home/gBHLHzPoYHd6qKq64EPMu0VGjFE.png",
+        "bytes": 416324,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/assets/km9cVU6eBDKPpPZ7c6pVaBudfQY.png",
+        "file": "public/images/home/km9cVU6eBDKPpPZ7c6pVaBudfQY.png",
+        "bytes": 108539,
+        "contentType": "image/png"
+      }
     ]
   }
 }
