@@ -1,26 +1,29 @@
 "use client";
 
-import { Card, CardBody } from "@heroui/react";
 import { misalStats } from "@/lib/misal-data";
 
 export function MisalStatsGrid() {
   return (
-    <section className="space-y-8">
-      <h2 className="text-center font-display text-4xl font-bold tracking-[-0.04em] text-navy sm:text-5xl">
-        Key features
-      </h2>
-      <div className="grid gap-5 md:grid-cols-2">
+    <section className="space-y-10 sm:space-y-12">
+      <div className="text-center">
+        <h2 className="font-display text-3xl font-bold tracking-[-0.03em] text-navy sm:text-4xl">
+          Key features
+        </h2>
+        <span
+          className="mx-auto mt-4 block h-1 w-12 rounded-full bg-orange"
+          aria-hidden="true"
+        />
+      </div>
+      <div className="grid gap-5 sm:gap-6 md:grid-cols-2">
         {misalStats.map((item) => (
-          <Card
+          <article
             key={item.title}
-            className="rounded-[var(--radius-card)] border border-hairline bg-white/90 shadow-[var(--shadow-card)]"
+            className="rounded-[var(--radius-card)] border border-hairline border-t-orange bg-surface p-6 shadow-[var(--shadow-card)] motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:-translate-y-0.5 sm:p-8"
           >
-            <CardBody className="p-6 sm:p-8">
-              <h3 className="font-display text-2xl font-bold tracking-[-0.03em] text-navy sm:text-3xl">
-                {item.title}
-              </h3>
-            </CardBody>
-          </Card>
+            <h3 className="font-display text-xl font-semibold leading-snug tracking-tight text-navy sm:text-2xl">
+              {item.title}
+            </h3>
+          </article>
         ))}
       </div>
     </section>

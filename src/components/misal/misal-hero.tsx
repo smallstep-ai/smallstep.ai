@@ -1,11 +1,16 @@
 export function MisalHero() {
   return (
-    <section className="space-y-6 text-center">
-      <h1 className="font-display text-5xl font-bold tracking-[-0.05em] text-navy sm:text-6xl lg:text-7xl">
+    <section className="text-center">
+      <h1 className="font-display text-4xl font-bold tracking-[-0.03em] text-navy sm:text-5xl lg:text-6xl">
         Unleash the Power of Misal
       </h1>
-      <p className="mx-auto max-w-3xl text-lg leading-8 text-muted">
-        smallstep.ai brings to you a revolutionary LLM specifically designed for Marathi
+      <span
+        className="mx-auto mt-6 block h-1 w-16 rounded-full bg-orange"
+        aria-hidden="true"
+      />
+      <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
+        smallstep.ai brings to you a revolutionary LLM specifically designed for
+        Marathi
       </p>
     </section>
   );
