@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange: #fe911c;
+  --color-teal: #2ca9a8;
+  --color-navy: #001122;
+  --color-ink: #000000;
+  --color-offblack: #2a2b2b;
+  --color-surface: #ffffff;
+  --color-muted: #666666;
+  --color-caption: #888888;
+  --color-hairline: #e6e6e6;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter);
+  --font-body: var(--font-general-sans);
+
+  --radius-pill: 30px;
+  --radius-card: 20px;
+  --radius-sm: 8px;
+
+  --shadow-nav: 0px 0.6px 0.6px -1.25px rgba(186, 186, 186, 0.447), 0px 2.29px 2.29px -2.5px rgba(186, 186, 186, 0.392), 0px 10px 10px -3.75px rgba(186, 186, 186, 0.157);
+  --shadow-card: 0px 0.71px 0.71px -0.63px rgba(0, 0, 0, 0.15), 0px 1.81px 1.81px -1.25px rgba(0, 0, 0, 0.14), 0px 3.62px 3.62px -1.88px rgba(0, 0, 0, 0.12), 0px 6.87px 6.87px -2.5px rgba(0, 0, 0, 0.11), 0px 13.65px 13.65px -3.13px rgba(0, 0, 0, 0.09), 0px 30px 30px -3.75px rgba(0, 0, 0, 0.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+}
