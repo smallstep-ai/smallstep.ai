@@ -12,20 +12,20 @@ export function TeamGrid() {
         {teamSection.title}
       </h2>
 
-      <div className="grid gap-8 md:grid-cols-2">
-        <div className="overflow-hidden rounded-2xl">
+      <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+        <div className="mx-auto w-full max-w-sm overflow-hidden rounded-2xl md:max-w-md">
           <Image
             src={founder.image}
             alt={founder.name}
-            width={640}
-            height={854}
-            sizes="(max-width: 768px) 100vw, 50vw"
+            width={480}
+            height={640}
+            sizes="(max-width: 768px) 80vw, 30vw"
             className="aspect-[3/4] w-full object-cover"
           />
         </div>
-        <div className="flex flex-col justify-center space-y-4">
-          <h3 className="font-display text-3xl font-bold text-ink sm:text-4xl">{founder.name}</h3>
-          <p className="text-lg text-muted">{founder.role}</p>
+        <div className="flex flex-col justify-center space-y-4 text-center md:text-left">
+          <h3 className="font-display text-2xl font-bold text-ink sm:text-3xl">{founder.name}</h3>
+          <p className="text-base text-muted">{founder.role}</p>
           {founder.linkedin && (
             <a
               href={founder.linkedin}
@@ -42,22 +42,22 @@ export function TeamGrid() {
         </div>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <div className="mx-auto grid max-w-4xl gap-5 sm:grid-cols-2 md:grid-cols-3">
         {contributors.map((member) => (
-          <div key={member.name} className="space-y-3">
+          <div key={member.name} className="space-y-2">
             <div className="overflow-hidden rounded-2xl">
               <Image
                 src={member.image}
                 alt={member.name}
-                width={640}
-                height={640}
-                sizes="(max-width: 768px) 100vw, 33vw"
+                width={400}
+                height={400}
+                sizes="(max-width: 768px) 50vw, 25vw"
                 className="aspect-square w-full object-cover"
               />
             </div>
             <div className="space-y-0.5">
-              <h3 className="font-display text-lg font-bold text-navy">{member.name}</h3>
-              <p className="text-sm leading-6 text-muted">{member.role}</p>
+              <h3 className="font-display text-base font-bold text-navy">{member.name}</h3>
+              <p className="text-xs leading-5 text-muted">{member.role}</p>
             </div>
           </div>
         ))}
