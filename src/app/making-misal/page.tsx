@@ -1,8 +1,26 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/container";
 import { MDXRenderer } from "@/components/mdx-renderer";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getMakingMisalPage } from "@/lib/content";
+
+export function generateMetadata(): Metadata {
+  const page = getMakingMisalPage();
+  const description = page.frontmatter.description ?? page.frontmatter.summary;
+
+  return {
+    title: page.frontmatter.title,
+    description,
+    openGraph: page.frontmatter.cover
+      ? {
+          title: page.frontmatter.title,
+          description,
+          images: [page.frontmatter.cover],
+        }
+      : undefined,
+  };
+}
 
 export default function MakingMisalPage() {
   const page = getMakingMisalPage();

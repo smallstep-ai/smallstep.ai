@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/container";
 import { MDXRenderer } from "@/components/mdx-renderer";
@@ -6,7 +7,30 @@ import { SiteHeader } from "@/components/site-header";
 import { getBlogPost, getBlogPosts } from "@/lib/content";
 
 export function generateStaticParams() {
-  return getBlogPosts().map((post) => ({ slug: [post.slug] }));
+  return getBlogPosts().map((post) => ({ slug: post.slug.split("/") }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {
+  const { slug: slugParts } = await params;
+  const post = getBlogPost(slugParts.join("/"));
+
+  if (!post) {
+    return {};
+  }
+
+  const description = post.frontmatter.description ?? post.frontmatter.summary;
+
+  return {
+    title: post.frontmatter.title,
+    description,
+    openGraph: post.frontmatter.cover
+      ? {
+          title: post.frontmatter.title,
+          description,
+          images: [post.frontmatter.cover],
+        }
+      : undefined,
+  };
 }
 
 export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string[] }> }) {
