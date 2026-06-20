@@ -18,44 +18,32 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 px-4 pt-5">
       <Container>
-        <Navbar
-          maxWidth="full"
-          className="rounded-[var(--radius-pill)] border border-white/60 bg-white/90 px-4 shadow-[var(--shadow-nav)] backdrop-blur-md"
+        <div className="flex items-center justify-between rounded-[var(--radius-pill)] border border-white/60 bg-white/90 px-4 py-3 shadow-[var(--shadow-nav)] backdrop-blur-md md:px-5"
         >
-          <NavbarBrand>
-            <SiteLogo />
-          </NavbarBrand>
-          <NavbarContent justify="end" className="gap-6">
-            <NavbarItem className="hidden md:flex">
-              <div className="flex gap-6">
-                {siteConfig.nav.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="text-base font-medium text-offblack transition hover:text-orange"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            </NavbarItem>
-            <NavbarItem className="flex md:hidden">
-              <NavbarMenuToggle className="text-offblack" />
-            </NavbarItem>
-          </NavbarContent>
-          <NavbarMenu className="top-[calc(var(--navbar-height)+1rem)] mt-4 rounded-2xl border border-white/60 bg-white/95 px-4 py-4 shadow-[var(--shadow-nav)] backdrop-blur-md">
+          <SiteLogo />
+          <nav className="hidden items-center gap-6 md:flex">
             {siteConfig.nav.map((item) => (
-              <NavbarMenuItem key={item.href}>
-                <Link
-                  href={item.href}
-                  className="block py-2 text-base font-medium text-offblack transition hover:text-orange"
-                >
-                  {item.label}
-                </Link>
-              </NavbarMenuItem>
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-base font-medium text-offblack transition hover:text-orange"
+              >
+                {item.label}
+              </Link>
             ))}
-          </NavbarMenu>
-        </Navbar>
+          </nav>
+          <button
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            className="flex h-10 w-10 items-center justify-center rounded-full text-offblack md:hidden"
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+            >
+              <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+            </svg>
+          </button>
+        </div>
       </Container>
     </header>
   );

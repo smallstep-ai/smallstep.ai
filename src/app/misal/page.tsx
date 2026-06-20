@@ -13,7 +13,7 @@ export default function MisalPage() {
       <SiteHeader />
       <Container className="space-y-16 py-16 sm:py-20">
         <MisalHero />
-        <section className="grid gap-8 rounded-[var(--radius-card)] border border-hairline bg-white p-8 shadow-[var(--shadow-card)] lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:p-10">
+        <section className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
           <div className="space-y-5">
             <h2 className="font-display text-4xl font-bold tracking-[-0.04em] text-navy sm:text-5xl">{misalIntro.title}</h2>
             <ul className="space-y-4 text-lg leading-8 text-muted">
@@ -25,12 +25,13 @@ export default function MisalPage() {
               ))}
             </ul>
           </div>
-          <div className="overflow-hidden rounded-[16px] border border-hairline bg-white">
+          <div className="overflow-hidden rounded-2xl">
             <Image
               src="/images/misal/7PuDqtkAui8aKVAttqppGTzNw.jpeg"
               alt="Misal model preview"
-              width={3840}
-              height={2160}
+              width={1474}
+              height={640}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="h-auto w-full"
             />
           </div>

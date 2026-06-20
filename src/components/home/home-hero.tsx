@@ -21,9 +21,10 @@ export function HomeHero() {
         <Image
           src={homeHero.image}
           alt="Smallstep AI hero illustration"
-          width={4268}
-          height={4268}
+          width={1474}
+          height={640}
           priority
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="h-auto w-full"
         />
       </div>
