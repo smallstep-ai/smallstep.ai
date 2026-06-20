@@ -38,6 +38,7 @@ export const teamMembers = [
     role: "Founder, smallstep.ai",
     image: "/images/home/oP2yQYkBKtcqHMd3f5YjScXycKE.png",
     featured: true,
+    linkedin: "https://www.linkedin.com/in/sagarsarkale",
   },
   {
     name: "Shravani Chavan",

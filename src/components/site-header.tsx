@@ -18,15 +18,21 @@ export function SiteHeader() {
           <nav className="hidden items-center gap-6 md:flex">
             {siteConfig.nav.map((item) => {
               const isActive = pathname === item.href;
+              const color =
+                item.label === "Misal"
+                  ? "text-orange"
+                  : item.label === "Blog"
+                    ? "text-teal"
+                    : "text-offblack";
               return (
                 <Link
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "text-base font-medium transition hover:text-orange",
+                    "text-base font-medium transition hover:opacity-80",
                     isActive
-                      ? "text-orange underline decoration-2 underline-offset-4"
-                      : "text-offblack"
+                      ? "text-ink underline decoration-2 underline-offset-4"
+                      : color
                   )}
                 >
                   {item.label}
