@@ -7,10 +7,12 @@ export function ExternalLinkCard({
   href,
   title,
   description,
+  ctaLabel,
 }: {
   href: string;
   title: string;
   description: string;
+  ctaLabel?: string;
 }) {
   const isExternal = /^https?:\/\//.test(href);
 
@@ -20,6 +22,7 @@ export function ExternalLinkCard({
         <CardBody className="space-y-2 p-6">
           <h3 className="font-display text-2xl font-bold text-ink">{title}</h3>
           <p className="text-base leading-7 text-muted">{description}</p>
+          {ctaLabel ? <p className="pt-2 text-sm font-semibold text-orange">{ctaLabel}</p> : null}
         </CardBody>
       </Card>
     </Link>
