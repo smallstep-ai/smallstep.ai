@@ -51,7 +51,7 @@ peft:
   lora_dropout: 0.05
   bias: "none"
   task_type: "CAUSAL_LM"
-  modules_to_save: ["embed_tokens", "lm_head"
+  modules_to_save: ["embed_tokens", "lm_head"]
 ```
 
 Our model was pretrained using a single A100 80GB GPU on the [QBlocks](https://www.qblocks.cloud/) platform. We chose bfloat16 as training precision due to stability issues with float16 precision.

@@ -37,18 +37,30 @@ const mdxComponents = {
     <hr className={cn("my-10 border-hairline", className)} {...props} />
   ),
   code: ({ className, ...props }: ComponentPropsWithoutRef<"code">) => (
-    <code className={cn("rounded bg-black/5 px-1.5 py-0.5 font-mono text-sm text-ink", className)} {...props} />
+    <code
+      className={cn(
+        "rounded bg-black/5 px-1.5 py-0.5 font-mono text-sm text-ink",
+        "[pre_&]:bg-transparent [pre_&]:p-0 [pre_&]:text-inherit",
+        className
+      )}
+      {...props}
+    />
   ),
-  pre: ({ className, ...props }: ComponentPropsWithoutRef<"pre">) => (
-    <pre className={cn("overflow-x-auto rounded-2xl bg-ink p-5 text-sm text-white", className)} {...props} />
+  pre: ({ className, children, ...props }: ComponentPropsWithoutRef<"pre">) => (
+    <pre
+      className={cn("overflow-x-auto rounded-2xl bg-ink p-5 font-mono text-sm text-white", className)}
+      {...props}
+    >
+      {children}
+    </pre>
   ),
   img: ({ src, alt, className, ...props }: ComponentPropsWithoutRef<"img">) => {
     if (!src) return null;
     return (
-      <figure className={cn("my-8", className)}>
+      <span className={cn("my-8 block", className)}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={src} alt={alt ?? ""} className="h-auto w-full rounded-2xl" loading="lazy" {...props} />
-      </figure>
+      </span>
     );
   },
 };
