@@ -12,8 +12,10 @@ export function ExternalLinkCard({
   title: string;
   description: string;
 }) {
+  const isExternal = /^https?:\/\//.test(href);
+
   return (
-    <Link href={href} target="_blank" rel="noreferrer">
+    <Link href={href} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
       <Card className="h-full rounded-[var(--radius-card)] border border-hairline bg-white shadow-[var(--shadow-card)] transition-transform hover:-translate-y-0.5">
         <CardBody className="space-y-2 p-6">
           <h3 className="font-display text-2xl font-bold text-ink">{title}</h3>
