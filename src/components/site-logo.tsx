@@ -1,11 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export function SiteLogo() {
   return (
-    <Link href="/" className="flex items-center gap-3">
-      <Image src="/images/shared/f0HEEzRQxCUtKyThUP60hvJiShI.png" alt="Smallstep AI" width={38} height={38} />
-      <span className="font-display text-xl font-semibold text-ink">smallstep.ai</span>
+    <Link
+      href="/"
+      className="font-display text-xl font-semibold bg-gradient-to-r from-[#0F385A] to-[#2CA9A8] bg-clip-text text-transparent"
+    >
+      smallstep.ai
     </Link>
   );
 }
