@@ -10,12 +10,12 @@ export default function MisalPage() {
   return (
     <main className="min-h-screen bg-white">
       <SiteHeader />
-      <div className="bg-gradient-to-b from-[#E17029] via-[#FEAB55] via-[#FCF0C1] to-white pb-16 sm:pb-20">
-        <Container className="pt-24 sm:pt-28">
+      <div className="bg-gradient-to-b from-[#E17029] via-[#FEAB55] via-[#FCF0C1] to-white">
+        <Container className="pt-24 sm:pt-28 pb-16 sm:pb-20">
           <MisalHero />
         </Container>
       </div>
-      <Container className="space-y-16 py-16 sm:py-20">
+      <Container className="space-y-16 pb-16 sm:pb-20">
         <MisalTrySection />
         <MisalStatsGrid />
         <MisalLinksGrid />
