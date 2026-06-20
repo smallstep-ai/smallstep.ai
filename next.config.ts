@@ -8,8 +8,6 @@ const withMDX = createMDX({
 const nextConfig: NextConfig = {
   output: "export",
   distDir: "dist",
-  basePath: "/smallstep.ai",
-  assetPrefix: "/smallstep.ai/",
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   images: {
     unoptimized: true,
