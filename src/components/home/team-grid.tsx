@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { FadeUp } from "@/components/home/fade-up";
 import { teamMembers, teamSection } from "@/lib/home-data";
 
 function LinkedInIcon({ className }: { className?: string }) {
@@ -25,22 +26,24 @@ export function TeamGrid() {
   return (
     <div className="space-y-16 sm:space-y-20">
       <section className="text-center">
-        <p className="mb-3 font-body text-sm font-semibold uppercase tracking-wider text-teal">
-          Founder
-        </p>
-        <h2 className="font-display text-3xl font-bold tracking-[-0.04em] text-navy sm:text-4xl lg:text-5xl">
-          Meet the brains behind
-        </h2>
+        <FadeUp as="div" delay={100}>
+          <p className="mb-3 font-body text-sm font-semibold uppercase tracking-wider text-teal">
+            Founder
+          </p>
+          <h2 className="font-display text-3xl font-bold tracking-[-0.04em] text-navy sm:text-4xl lg:text-5xl">
+            Meet the brains behind
+          </h2>
+        </FadeUp>
         <div className="mt-10 flex justify-center">
-          <div className="w-full max-w-[280px] sm:max-w-[320px]">
-            <div className="overflow-hidden rounded-[20px]">
+          <FadeUp as="div" delay={200} className="w-full max-w-[280px] sm:max-w-[320px]">
+            <div className="group overflow-hidden rounded-[20px] transition duration-300 ease-out hover:-translate-y-1">
               <Image
                 src={founder.image}
                 alt={founder.name}
                 width={480}
                 height={640}
                 sizes="(max-width: 640px) 280px, 320px"
-                className="aspect-[3/4] w-full object-cover"
+                className="aspect-[3/4] w-full object-cover transition duration-300 ease-out group-hover:scale-[1.02]"
               />
             </div>
             <div className="mt-5">
@@ -53,7 +56,7 @@ export function TeamGrid() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${founder.name} on LinkedIn`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-hairline text-offblack transition hover:bg-teal hover:text-white"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-hairline text-offblack transition hover:-translate-y-0.5 hover:bg-teal hover:text-white"
                   >
                     <LinkedInIcon className="h-5 w-5" />
                   </a>
@@ -64,29 +67,34 @@ export function TeamGrid() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${founder.name} on X`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-hairline text-offblack transition hover:bg-ink hover:text-white"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-hairline text-offblack transition hover:-translate-y-0.5 hover:bg-ink hover:text-white"
                   >
                     <XIcon className="h-[18px] w-[18px]" />
                   </a>
                 )}
               </div>
             </div>
-          </div>
+          </FadeUp>
         </div>
       </section>
 
       <section>
-        <div className="mb-10 text-center">
+        <FadeUp as="div" delay={100} className="mb-10 text-center">
           <p className="mb-3 font-body text-sm font-semibold uppercase tracking-wider text-teal">
             {teamSection.eyebrow}
           </p>
           <h2 className="font-display text-3xl font-bold tracking-[-0.04em] text-navy sm:text-4xl lg:text-5xl">
             {teamSection.title}
           </h2>
-        </div>
+        </FadeUp>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
-          {contributors.map((member) => (
-            <div key={member.name} className="text-center">
+          {contributors.map((member, index) => (
+            <FadeUp
+              key={member.name}
+              as="div"
+              delay={Math.min((index + 1) * 100, 700)}
+              className="group text-center transition duration-300 ease-out hover:-translate-y-1"
+            >
               <div className="overflow-hidden rounded-[20px]">
                 <Image
                   src={member.image}
@@ -94,14 +102,14 @@ export function TeamGrid() {
                   width={400}
                   height={400}
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                  className="aspect-square w-full object-cover"
+                  className="aspect-square w-full object-cover transition duration-300 ease-out group-hover:scale-[1.02]"
                 />
               </div>
               <div className="mt-3">
                 <h3 className="font-display text-base font-semibold text-navy">{member.name}</h3>
                 <p className="mt-0.5 text-sm text-muted">{member.role}</p>
               </div>
-            </div>
+            </FadeUp>
           ))}
         </div>
       </section>
