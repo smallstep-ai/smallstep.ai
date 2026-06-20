@@ -1,0 +1,101 @@
+{
+  "source": "https://smallstep.ai",
+  "routes": {
+    "shared": [
+      {
+        "url": "https://framerusercontent.com/images/f0HEEzRQxCUtKyThUP60hvJiShI.png",
+        "file": "design/assets/shared/f0HEEzRQxCUtKyThUP60hvJiShI.png",
+        "bytes": 11311,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/assets/1neDfMk18fMbYVdHvaMGjVi7nY.jpg",
+        "file": "design/assets/shared/1neDfMk18fMbYVdHvaMGjVi7nY.jpg",
+        "bytes": 191838,
+        "contentType": "image/jpeg"
+      }
+    ],
+    "misal": [
+      {
+        "url": "https://framerusercontent.com/images/QvHe4KQKeF4SdlMfkZm4ZCghTk.png",
+        "file": "design/assets/misal/QvHe4KQKeF4SdlMfkZm4ZCghTk.png",
+        "bytes": 12196,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/7PuDqtkAui8aKVAttqppGTzNw.jpeg",
+        "file": "design/assets/misal/7PuDqtkAui8aKVAttqppGTzNw.jpeg",
+        "bytes": 995650,
+        "contentType": "image/jpeg"
+      },
+      {
+        "url": "https://framerusercontent.com/images/HDaIzUPiig3yMOVm70RaPTHo0.svg",
+        "file": "design/assets/misal/HDaIzUPiig3yMOVm70RaPTHo0.svg",
+        "bytes": 663,
+        "contentType": "image/svg+xml"
+      },
+      {
+        "url": "https://framerusercontent.com/images/4ls87KGXhpY4s8B7ev3btRGTcz0.png",
+        "file": "design/assets/misal/4ls87KGXhpY4s8B7ev3btRGTcz0.png",
+        "bytes": 29034,
+        "contentType": "image/png"
+      }
+    ],
+    "making-misal": [
+      {
+        "url": "https://framerusercontent.com/images/1neDfMk18fMbYVdHvaMGjVi7nY.jpg",
+        "file": "design/assets/making-misal/1neDfMk18fMbYVdHvaMGjVi7nY.jpg",
+        "bytes": 191838,
+        "contentType": "image/jpeg"
+      },
+      {
+        "url": "https://framerusercontent.com/images/351zhLC95unkIWm09mK3TfNAWP0.png",
+        "file": "design/assets/making-misal/351zhLC95unkIWm09mK3TfNAWP0.png",
+        "bytes": 93994,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/VIQ26FoTTa7cH1s6kXUmSutORUU.png",
+        "file": "design/assets/making-misal/VIQ26FoTTa7cH1s6kXUmSutORUU.png",
+        "bytes": 103315,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/JWniDgAly6SFTvfdHtff0cLcnWY.png",
+        "file": "design/assets/making-misal/JWniDgAly6SFTvfdHtff0cLcnWY.png",
+        "bytes": 18532,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/BsBMKrbgvNIwA6znxVtJFTuBHM.png",
+        "file": "design/assets/making-misal/BsBMKrbgvNIwA6znxVtJFTuBHM.png",
+        "bytes": 41975,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/VEiXOhWwpvKzZqJGjYDLB6fXvak.png",
+        "file": "design/assets/making-misal/VEiXOhWwpvKzZqJGjYDLB6fXvak.png",
+        "bytes": 48832,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/Lm566kbYJ9bu5W3p5GXS8QjHlIg.png",
+        "file": "design/assets/making-misal/Lm566kbYJ9bu5W3p5GXS8QjHlIg.png",
+        "bytes": 37960,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/89ULi0BKCyOBXCs508vDImrErc.png",
+        "file": "design/assets/making-misal/89ULi0BKCyOBXCs508vDImrErc.png",
+        "bytes": 29957,
+        "contentType": "image/png"
+      },
+      {
+        "url": "https://framerusercontent.com/images/oYRJ925hmTBDjd6RMucvD1qtl7s.jpeg",
+        "file": "design/assets/making-misal/oYRJ925hmTBDjd6RMucvD1qtl7s.jpeg",
+        "bytes": 27653,
+        "contentType": "image/jpeg"
+      }
+    ]
+  }
+}

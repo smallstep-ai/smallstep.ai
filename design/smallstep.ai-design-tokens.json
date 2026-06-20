@@ -1,0 +1,209 @@
+{
+  "color": {
+    "Ink Black": {
+      "$type": "color",
+      "$value": "#000000",
+      "$description": "Primary body text, nav text, default foreground across all zones"
+    },
+    "Deep Navy": {
+      "$type": "color",
+      "$value": "#001122",
+      "$description": "Hero H1 heading text — darkest heading color"
+    },
+    "Off-Black": {
+      "$type": "color",
+      "$value": "#2a2b2b",
+      "$description": "Navigation links and secondary heading text"
+    },
+    "Surface White": {
+      "$type": "color",
+      "$value": "#ffffff",
+      "$description": "Nav pill background, card surfaces, page base"
+    },
+    "Misal Orange": {
+      "$type": "color",
+      "$value": "#fe911c",
+      "$description": "MISAL product name display text, nav 'Misal' link highlight, brand accent"
+    },
+    "Teal Accent": {
+      "$type": "color",
+      "$value": "#2ca9a8",
+      "$description": "Logo dots, teal brand mark element"
+    },
+    "Mid Grey": {
+      "$type": "color",
+      "$value": "#666666",
+      "$description": "Footer secondary text, muted labels"
+    },
+    "Light Grey": {
+      "$type": "color",
+      "$value": "#888888",
+      "$description": "Footer tertiary text, captions"
+    },
+    "Hairline Grey": {
+      "$type": "color",
+      "$value": "#e6e6e6",
+      "$description": "Subtle dividers and border hairlines"
+    }
+  },
+  "typography": {
+    "Hero Display": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontSize": "60px",
+        "fontWeight": 700,
+        "lineHeight": "72px",
+        "letterSpacing": "-3.8px"
+      },
+      "$description": "Primary hero H1 headline — largest display text"
+    },
+    "Mega Display": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontSize": "120px",
+        "fontWeight": 700,
+        "lineHeight": "180px",
+        "letterSpacing": "-0.5px"
+      },
+      "$description": "Oversized product name display (MISAL)"
+    },
+    "Section Heading Large": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontSize": "72px",
+        "fontWeight": 700,
+        "lineHeight": "86.4px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Large section headings"
+    },
+    "Section Heading Medium": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontSize": "50px",
+        "fontWeight": 700,
+        "lineHeight": "60px",
+        "letterSpacing": "-2.1px"
+      },
+      "$description": "Mid-size section headings"
+    },
+    "Subheading": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontSize": "36px",
+        "fontWeight": 700,
+        "lineHeight": "43.2px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Sub-section headings"
+    },
+    "General Sans Subhead": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "General Sans",
+        "fontSize": "27px",
+        "fontWeight": 600,
+        "lineHeight": "27px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Product/section subheadings, nav brand name"
+    },
+    "General Sans Body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "General Sans",
+        "fontSize": "18px",
+        "fontWeight": 500,
+        "lineHeight": "27px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Body copy, descriptive paragraphs"
+    },
+    "UI Label Medium": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": 600,
+        "lineHeight": "28px",
+        "letterSpacing": "-0.5px"
+      },
+      "$description": "UI labels, card titles"
+    },
+    "UI Label Small": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": "25.6px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Navigation items, small UI labels"
+    },
+    "Caption": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": "21px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Captions, metadata, fine print"
+    }
+  },
+  "spacing": {
+    "xs": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "10px"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "15px"
+    },
+    "base": {
+      "$type": "dimension",
+      "$value": "20px"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "30px"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "50px"
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "66px"
+    },
+    "3xl": {
+      "$type": "dimension",
+      "$value": "100px"
+    }
+  },
+  "borderRadius": {
+    "pill": {
+      "$type": "dimension",
+      "$value": "30px"
+    },
+    "card": {
+      "$type": "dimension",
+      "$value": "20px"
+    },
+    "small": {
+      "$type": "dimension",
+      "$value": "8px"
+    }
+  }
+}
