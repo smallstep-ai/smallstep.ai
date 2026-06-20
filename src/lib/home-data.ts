@@ -39,6 +39,7 @@ export const teamMembers = [
     image: "/images/home/oP2yQYkBKtcqHMd3f5YjScXycKE.png",
     featured: true,
     linkedin: "https://www.linkedin.com/in/sagarsarkale",
+    x: "https://x.com/sagar_sarkale",
   },
   {
     name: "Shravani Chavan",
