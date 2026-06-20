@@ -9,6 +9,5 @@ test-results
 .DS_Store
 .env*
 !.env.example
-next-env.d.ts
 playwright/.cache
 tsconfig.tsbuildinfo
